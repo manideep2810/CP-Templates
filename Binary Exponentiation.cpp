@@ -119,7 +119,7 @@ vector<vector<int>> Num_paths(vector<vector<int>> adj, int k)
     return res;
 }
 
-/* Number of Shortes paths Having atmost K edges in between */
+/* Length of Shortest paths Having atmost K edges in between */
 vector<vector<int>> modified_floyd_Warshall(vector<vector<int>> res, vector<vector<int>> adj)
 {
     int n = adj.size();
@@ -152,7 +152,7 @@ vector<vector<int>> modified_floyd_Warshall(vector<vector<int>> res, vector<vect
     return ans;
 }
 
-// res[i][j] represents number of shortest paths between i and j with atmost k edges in between
+// res[i][j] represents length of shortest paths between i and j with atmost k edges in between
 vector<vector<int>> Num_Shortest_paths(vector<vector<int>> adj, int k)
 {
     int n = adj.size();
